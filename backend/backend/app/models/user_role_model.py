@@ -1,7 +1,7 @@
-from lib.lib_import import (
-    Base, Column, Integer, String, Enum, DateTime, 
-    datetime, timezone, enum
-)
+from database.database import Base
+from sqlalchemy import Column, Integer, String, Enum, DateTime
+from datetime import datetime, timezone
+import enum
 
 class GenderEnum(str, enum.Enum):
     MALE = "MALE"

@@ -1,5 +1,6 @@
+from database.database import Base
 from lib.lib_import import (
-    Base, Column, Integer, String, ForeignKey,
+    Column, Integer, String, ForeignKey,
     DateTime, Text, relationship, func
 )
 

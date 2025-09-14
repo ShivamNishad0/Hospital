@@ -1,4 +1,5 @@
-from lib.lib_import import Base, Column, Integer, String, ForeignKey, relationship
+from database.database import Base
+from lib.lib_import import Column, Integer, String, ForeignKey, relationship
 
 class DoctorModel(Base):
     __tablename__ = "doctors"

@@ -1,6 +1,7 @@
+from database.database import Base
 from lib.lib_import import (
     Column, Integer, String, Enum, ForeignKey, 
-    enum, DateTime, relationship, datetime, timezone, Base
+    enum, DateTime, relationship, datetime, timezone
 )
 
 class LabOrderStatusEnum(enum.Enum):

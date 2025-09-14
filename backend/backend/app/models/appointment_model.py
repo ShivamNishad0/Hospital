@@ -1,6 +1,7 @@
+from database.database import Base
 from lib.lib_import import (
     Column, BigInteger, String, Enum, ForeignKey, relationship, CheckConstraint,
-    UniqueConstraint, func, Base, enum, DateTime, datetime, timezone
+    UniqueConstraint, func, enum, DateTime, datetime, timezone
 )
 
 class AppointmentStatus(str, enum.Enum):

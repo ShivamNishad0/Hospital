@@ -1,6 +1,7 @@
+from database.database import Base
 from lib.lib_import import (
     Column, BigInteger, SmallInteger, Time, Boolean, ForeignKey, 
-    DateTime, CheckConstraint, relationship, func, Base
+    DateTime, CheckConstraint, relationship, func
 )
 
 class DoctorAvailabilityModel(Base):

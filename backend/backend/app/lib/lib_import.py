@@ -34,26 +34,8 @@ from sqlalchemy import (
     Time, Text, create_engine
 )
 
+# Remove Base import to avoid circular import issues
+# Base = declarative_base()
+
 # datetime
 from datetime import datetime, timezone, time, timedelta
-
-# database
-from database.database import Base, get_db
-
-# core
-from core.dependency import get_current_user
-from core.jwt import create_access_token, decode_access_token
-from core.roles import role_checker
-from core.security import hash_password, verify_password
-
-# routes
-from routes import (
-    appointments, auth, dashboard, doctor_availability, forgot_password,
-    lab_orders, prescriptions, registration
-)
-
-# routes/cmh
-from routes.cmh import (
-    allergies, conditions, encounter_notes, immunization, medical_doc, medication,
-    procedures, summary, timline, vitals
-)
